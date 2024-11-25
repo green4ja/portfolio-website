@@ -7,11 +7,21 @@
     font-family: "Poppins", sans-serif;
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 body {
     min-height: 100vh;
-    background: url('https://www.hdwallpapers.in/download/green_trees_mountains_under_starry_blue_sky_during_nighttime_4k_hd_nature-HD.jpg') no-repeat;
-    background-size: cover;
+    background: url('../downloads/site-background.jpg') no-repeat center center/cover;
     background-position: center;
+    background-color: #000;
+    animation: fadeIn 0.5s ease-in;
 }
 
 .header {
@@ -61,11 +71,26 @@ body {
     font-weight: 700;
 }
 
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
 .navbar a {
     font-size: 1.15rem;
     color: #fff;
     text-decoration: none;
     font-weight: 500;
+    margin-left: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.github-link i {
+    font-size: 2rem; /* Adjust the size as needed */
+}
+
+.github-link {
     margin-left: 2rem;
 }
 
