@@ -3,38 +3,39 @@ import TimelineItem from "@/components/TimelineItem";
 
 const experienceData = [
   {
-    title: "Senior Software Engineer",
-    company: "Tech Solutions Inc",
-    location: "New York, NY",
-    period: "2021 - Present",
+    title: "Control Software Engineering Co-op",
+    company: "Fives Cincinnati",
+    location: "Hebron, KY",
+    period: "Jan. 2025",
     description: [
-      "Lead a team of 5 developers building enterprise SaaS applications using React, Node.js, and AWS.",
-      "Implemented CI/CD pipelines that reduced deployment time by 40% and improved code quality.",
-      "Designed and developed a microservices architecture that increased system scalability and reliability.",
+      "Integrated a third-party SERCOS Stepper Motor Drive into a Rexroth-based controls system, expanding hardware compatibility.",
+      "Implemented linear, stepper, and servo motors into a robotic tape laying system.",
     ],
     image: "https://images.unsplash.com/photo-1485833077593-4278bba3f11f?auto=format&fit=crop&w=800&q=80",
   },
   {
-    title: "Full Stack Developer",
-    company: "Digital Innovations",
-    location: "San Francisco, CA",
-    period: "2018 - 2021",
+    title: "Analytics & Insights Engineering Co-op",
+    company: "Altec Inc.",
+    location: "Roanoke, VA",
+    period: "May 2024",
     description: [
-      "Developed and maintained client-facing web applications using React, Redux, and Node.js.",
-      "Collaborated with design team to implement responsive and accessible user interfaces.",
-      "Optimized database queries and API endpoints, resulting in a 30% improvement in application performance.",
+      "Earned the opportunity to become the Analytics & Insights Engineering team's first ever co-op, joining a highly specialized group of six experts company wide.",
+      "Became a teaching resource for individuals interested in learning more about telematics data.",
+      "Worked closely with the production team to create QlikSense tools that audited processes, ensuring only flawless utility trucks were delivered to customers.",
+      "Created a tool that monitors the various AWS tables used by the team, sending out daily email reports highlighting any issues.",
     ],
     image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80",
   },
   {
-    title: "Junior Web Developer",
-    company: "Creative Web Agency",
-    location: "Austin, TX",
-    period: "2016 - 2018",
+    title: "Product Engineering (Data) Co-op",
+    company: "Altec Inc.",
+    location: "Elizabethtown, KY",
+    period: "Aug. 2023",
     description: [
-      "Built dynamic websites and e-commerce platforms for clients in various industries.",
-      "Implemented SEO best practices, resulting in improved search engine rankings for clients.",
-      "Participated in daily scrums and agile development processes.",
+      "Improved the battery health monitoring report, leading to $1.5 million YTD of warranty cost savings.",
+      "Utilized telematics data housed in Amazon Web Service to develop SQL queries and Qlik Sense apps that gather and display valuable insight on automatic daily refresh.",
+      "Recognized in the company engineering newsletter for creating a new method of remotely detecting firmware updates on the controls system of Altec Green Fleet trucks.",
+      "Led a presentation to the sales team showcasing a custom application I developed, delivering previously unavailable metrics with automated daily data refreshes.",
     ],
     image: "https://images.unsplash.com/photo-1485833077593-4278bba3f11f?auto=format&fit=crop&w=800&q=80",
   },
@@ -71,23 +72,23 @@ const Experience = () => {
             <ul className="space-y-3 text-earth-700">
               <li className="flex items-start">
                 <div className="mr-2 mt-1 h-2 w-2 rounded-full bg-coffee-500"></div>
-                <p>Extensive experience in full-stack development with modern technologies.</p>
+                <p>Strong technical background in software engineering with hands-on experience in control systems and data analytics.</p>
               </li>
               <li className="flex items-start">
                 <div className="mr-2 mt-1 h-2 w-2 rounded-full bg-coffee-500"></div>
-                <p>Strong problem-solving skills and attention to detail.</p>
+                <p>Proven ability to deliver impactful solutions that generate measurable results ($1.5M in cost savings).</p>
               </li>
               <li className="flex items-start">
                 <div className="mr-2 mt-1 h-2 w-2 rounded-full bg-coffee-500"></div>
-                <p>Excellent communication and collaboration abilities.</p>
+                <p>Excellent communication skills demonstrated through presentations to technical and non-technical stakeholders.</p>
               </li>
               <li className="flex items-start">
                 <div className="mr-2 mt-1 h-2 w-2 rounded-full bg-coffee-500"></div>
-                <p>Adaptability and eagerness to learn new technologies.</p>
+                <p>Passion for learning new technologies and applying them to solve real-world problems.</p>
               </li>
               <li className="flex items-start">
                 <div className="mr-2 mt-1 h-2 w-2 rounded-full bg-coffee-500"></div>
-                <p>Commitment to writing clean, maintainable, and efficient code.</p>
+                <p>Experience working in specialized engineering teams and adapting to different work environments.</p>
               </li>
             </ul>
           </div>

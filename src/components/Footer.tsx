@@ -25,15 +25,15 @@ const Footer = () => {
             <ul className="space-y-2">
               <li className="flex items-center gap-2">
                 <Mail size={18} />
-                <a href="mailto:your.email@example.com" className="hover:text-white transition-colors">your.email@example.com</a>
+                <a href="mailto:green4ja@mail.uc.edu" className="hover:text-white transition-colors">green4ja@mail.uc.edu</a>
               </li>
               <li className="flex items-center gap-2">
                 <Phone size={18} />
-                <span>(555) 123-4567</span>
+                <span>(513) 310-4419</span>
               </li>
               <li className="flex items-center gap-2">
                 <MapPin size={18} />
-                <span>City, State</span>
+                <span>Cincinnati, OH</span>
               </li>
             </ul>
           </div>
@@ -43,18 +43,24 @@ const Footer = () => {
             <ul className="space-y-2">
               <li className="flex items-center gap-2">
                 <FileText size={18} />
-                <Link to="/resume" className="hover:text-white transition-colors">Download Resume</Link>
+                <a 
+                  href="/lovable-uploads/cae90491-3e68-4db8-9145-7f432359f7f1.png" 
+                  download="Jacob_Greenebaum_Resume.pdf"
+                  className="hover:text-white transition-colors"
+                >
+                  Download Resume
+                </a>
               </li>
               <li className="flex items-center gap-2">
                 <Briefcase size={18} />
-                <Link to="/projects" className="hover:text-white transition-colors">Featured Projects</Link>
+                <Link to="/projects/1" className="hover:text-white transition-colors">Featured Project</Link>
               </li>
             </ul>
           </div>
         </div>
         
         <div className="border-t border-earth-700 mt-8 pt-8 text-center text-earth-300">
-          <p>© {currentYear} Your Name. All rights reserved.</p>
+          <p>© {currentYear} Jacob Greenebaum. All rights reserved.</p>
         </div>
       </div>
     </footer>

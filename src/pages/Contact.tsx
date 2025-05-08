@@ -1,6 +1,6 @@
 
 import ContactForm from "@/components/ContactForm";
-import { Mail, MapPin, Phone } from "lucide-react";
+import { Mail, MapPin, Phone, Linkedin, Github } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -31,8 +31,8 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-medium text-earth-800">Email</h3>
-                  <a href="mailto:your.email@example.com" className="text-coffee-600 hover:text-coffee-700 transition-colors">
-                    your.email@example.com
+                  <a href="mailto:green4ja@mail.uc.edu" className="text-coffee-600 hover:text-coffee-700 transition-colors">
+                    green4ja@mail.uc.edu
                   </a>
                 </div>
               </div>
@@ -43,8 +43,8 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-medium text-earth-800">Phone</h3>
-                  <a href="tel:+15551234567" className="text-coffee-600 hover:text-coffee-700 transition-colors">
-                    (555) 123-4567
+                  <a href="tel:+15133104419" className="text-coffee-600 hover:text-coffee-700 transition-colors">
+                    (513) 310-4419
                   </a>
                 </div>
               </div>
@@ -56,7 +56,7 @@ const Contact = () => {
                 <div>
                   <h3 className="font-medium text-earth-800">Location</h3>
                   <p className="text-earth-600">
-                    City, State<br />
+                    Cincinnati, OH<br />
                     United States
                   </p>
                 </div>
@@ -66,15 +66,22 @@ const Contact = () => {
             <div className="mt-12">
               <h3 className="font-medium text-earth-800 mb-4">Connect with me</h3>
               <div className="flex space-x-4">
-                {["LinkedIn", "GitHub", "Twitter", "Dribbble"].map((platform) => (
-                  <a
-                    key={platform}
-                    href="#"
-                    className="px-4 py-2 bg-earth-100 text-earth-700 rounded-md hover:bg-coffee-100 hover:text-coffee-700 transition-colors"
-                  >
-                    {platform}
-                  </a>
-                ))}
+                <a
+                  href="https://github.com/green4ja"
+                  target="_blank"
+                  rel="noopener noreferrer" 
+                  className="flex items-center px-4 py-2 bg-earth-100 text-earth-700 rounded-md hover:bg-coffee-100 hover:text-coffee-700 transition-colors"
+                >
+                  <Github size={18} className="mr-2" />
+                  GitHub
+                </a>
+                <a
+                  href="#"
+                  className="flex items-center px-4 py-2 bg-earth-100 text-earth-700 rounded-md hover:bg-coffee-100 hover:text-coffee-700 transition-colors"
+                >
+                  <Linkedin size={18} className="mr-2" />
+                  LinkedIn
+                </a>
               </div>
             </div>
           </div>

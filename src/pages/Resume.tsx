@@ -1,5 +1,5 @@
 
-import { FileText } from "lucide-react";
+import { Download } from "lucide-react";
 
 const Resume = () => {
   return (
@@ -11,10 +11,11 @@ const Resume = () => {
             My educational background, professional qualifications, and key skills.
           </p>
           <a 
-            href="#" 
+            href="/lovable-uploads/cae90491-3e68-4db8-9145-7f432359f7f1.png" 
+            download="Jacob_Greenebaum_Resume.pdf"
             className="inline-flex items-center mt-6 px-6 py-3 bg-coffee-600 text-white rounded-md font-medium hover:bg-coffee-700 transition-colors"
           >
-            <FileText size={18} className="mr-2" />
+            <Download size={18} className="mr-2" />
             Download Resume PDF
           </a>
         </div>
@@ -29,35 +30,18 @@ const Resume = () => {
               <h2 className="section-title">Education</h2>
               <div className="space-y-6">
                 <div className="bg-white p-6 rounded-lg border border-earth-100 shadow-sm">
-                  <h3 className="font-heading text-xl font-semibold text-earth-800">Master of Science in Computer Science</h3>
-                  <p className="text-coffee-600">University Name • 2018 - 2020</p>
+                  <h3 className="font-heading text-xl font-semibold text-earth-800">Bachelor of Science, Computer Engineering</h3>
+                  <p className="text-coffee-600">University of Cincinnati • Cincinnati, OH • 2027</p>
                   <p className="mt-3 text-earth-600">
-                    Specialized in artificial intelligence and machine learning. Thesis on "Applications of Deep Learning in Natural Language Processing."
+                    GPA: 3.5/4.0
                   </p>
                   <div className="mt-3 text-earth-700">
                     <p className="font-medium">Relevant Coursework:</p>
                     <ul className="list-disc pl-5 mt-1 space-y-1 text-earth-600">
-                      <li>Advanced Algorithms</li>
-                      <li>Machine Learning</li>
-                      <li>Data Mining</li>
-                      <li>Computer Vision</li>
-                    </ul>
-                  </div>
-                </div>
-                
-                <div className="bg-white p-6 rounded-lg border border-earth-100 shadow-sm">
-                  <h3 className="font-heading text-xl font-semibold text-earth-800">Bachelor of Science in Computer Engineering</h3>
-                  <p className="text-coffee-600">University Name • 2014 - 2018</p>
-                  <p className="mt-3 text-earth-600">
-                    Graduated with honors. Focused on software development and computer architecture.
-                  </p>
-                  <div className="mt-3 text-earth-700">
-                    <p className="font-medium">Relevant Coursework:</p>
-                    <ul className="list-disc pl-5 mt-1 space-y-1 text-earth-600">
+                      <li>Control Systems</li>
+                      <li>Software Development</li>
+                      <li>Computer Architecture</li>
                       <li>Data Structures and Algorithms</li>
-                      <li>Operating Systems</li>
-                      <li>Database Systems</li>
-                      <li>Web Development</li>
                     </ul>
                   </div>
                 </div>
@@ -66,36 +50,44 @@ const Resume = () => {
 
             {/* Certifications Section */}
             <section>
-              <h2 className="section-title">Certifications</h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                {[
-                  {
-                    title: "AWS Certified Solutions Architect",
-                    issuer: "Amazon Web Services",
-                    date: "2021",
-                  },
-                  {
-                    title: "Certified Scrum Master",
-                    issuer: "Scrum Alliance",
-                    date: "2020",
-                  },
-                  {
-                    title: "Google Cloud Professional Developer",
-                    issuer: "Google",
-                    date: "2019",
-                  },
-                  {
-                    title: "React Developer Certification",
-                    issuer: "Meta",
-                    date: "2018",
-                  },
-                ].map((cert, index) => (
-                  <div key={index} className="bg-white p-5 rounded-lg border border-earth-100 shadow-sm">
-                    <h3 className="font-semibold text-earth-800">{cert.title}</h3>
-                    <p className="text-coffee-600 text-sm">{cert.issuer}</p>
-                    <p className="text-earth-500 text-sm mt-2">Issued: {cert.date}</p>
+              <h2 className="section-title">Professional Experience</h2>
+              <div className="space-y-6">
+                <div className="bg-white p-6 rounded-lg border border-earth-100 shadow-sm">
+                  <h3 className="font-heading text-xl font-semibold text-earth-800">Control Software Engineering Co-op</h3>
+                  <p className="text-coffee-600">Fives Cincinnati • Hebron, KY • Jan. 2025</p>
+                  <div className="mt-3 text-earth-600">
+                    <ul className="list-disc pl-5 mt-1 space-y-2">
+                      <li>Integrated a third-party SERCOS Stepper Motor Drive into a Rexroth-based controls system, expanding hardware compatibility.</li>
+                      <li>Implemented linear, stepper, and servo motors into a robotic tape laying system.</li>
+                    </ul>
                   </div>
-                ))}
+                </div>
+                
+                <div className="bg-white p-6 rounded-lg border border-earth-100 shadow-sm">
+                  <h3 className="font-heading text-xl font-semibold text-earth-800">Analytics & Insights Engineering Co-op</h3>
+                  <p className="text-coffee-600">Altec Inc. • Roanoke, VA • May 2024</p>
+                  <div className="mt-3 text-earth-600">
+                    <ul className="list-disc pl-5 mt-1 space-y-2">
+                      <li>Earned the opportunity to become the Analytics & Insights Engineering team's first ever co-op, joining a highly specialized group of six experts company wide.</li>
+                      <li>Became a teaching resource for individuals interested in learning more about telematics data.</li>
+                      <li>Worked closely with the production team to create QlikSense tools that audited processes, ensuring only flawless utility trucks were delivered to customers.</li>
+                      <li>Created a tool that monitors the various AWS tables used by the team, sending out daily email reports highlighting any issues.</li>
+                    </ul>
+                  </div>
+                </div>
+                
+                <div className="bg-white p-6 rounded-lg border border-earth-100 shadow-sm">
+                  <h3 className="font-heading text-xl font-semibold text-earth-800">Product Engineering (Data) Co-op</h3>
+                  <p className="text-coffee-600">Altec Inc. • Elizabethtown, KY • Aug. 2023</p>
+                  <div className="mt-3 text-earth-600">
+                    <ul className="list-disc pl-5 mt-1 space-y-2">
+                      <li>Improved the battery health monitoring report, leading to $1.5 million YTD of warranty cost savings.</li>
+                      <li>Utilized telematics data housed in Amazon Web Service to develop SQL queries and Qlik Sense apps that gather and display valuable insight on automatic daily refresh.</li>
+                      <li>Recognized in the company engineering newsletter for creating a new method of remotely detecting firmware updates on the controls system of Altec Green Fleet trucks.</li>
+                      <li>Led a presentation to the sales team showcasing a custom application I developed, delivering previously unavailable metrics with automated daily data refreshes.</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </section>
           </div>
@@ -107,14 +99,14 @@ const Resume = () => {
 
               {/* Technical Skills */}
               <div className="mb-6">
-                <h3 className="text-coffee-700 font-medium mb-2">Technical</h3>
+                <h3 className="text-coffee-700 font-medium mb-2">Programming Languages</h3>
                 <div className="space-y-3">
                   {[
-                    { name: "JavaScript/TypeScript", level: 90 },
-                    { name: "React & React Native", level: 85 },
-                    { name: "Node.js", level: 80 },
-                    { name: "Python", level: 75 },
-                    { name: "SQL & NoSQL Databases", level: 70 },
+                    { name: "Python 3", level: 90 },
+                    { name: "C++", level: 85 },
+                    { name: "C# (.NET, WPF)", level: 80 },
+                    { name: "SQL", level: 75 },
+                    { name: "MATLAB", level: 70 },
                   ].map((skill) => (
                     <div key={skill.name}>
                       <div className="flex justify-between mb-1">
@@ -132,15 +124,18 @@ const Resume = () => {
                 </div>
               </div>
 
-              {/* Professional Skills */}
+              {/* Software/Frameworks */}
               <div>
-                <h3 className="text-coffee-700 font-medium mb-2">Professional</h3>
+                <h3 className="text-coffee-700 font-medium mb-2">Software & Frameworks</h3>
                 <div className="space-y-3">
                   {[
-                    { name: "Project Management", level: 85 },
-                    { name: "UI/UX Design", level: 70 },
-                    { name: "Team Leadership", level: 80 },
-                    { name: "Problem Solving", level: 90 },
+                    { name: "Microsoft Office", level: 90 },
+                    { name: "VSCode", level: 85 },
+                    { name: "VS 2022", level: 80 },
+                    { name: "Indraworks", level: 75 },
+                    { name: "Qlik", level: 85 },
+                    { name: "AWS", level: 80 },
+                    { name: "Raspberry Pi", level: 90 },
                   ].map((skill) => (
                     <div key={skill.name}>
                       <div className="flex justify-between mb-1">
@@ -158,18 +153,26 @@ const Resume = () => {
                 </div>
               </div>
 
-              {/* Languages */}
+              {/* Web Skills */}
               <div className="mt-6">
-                <h3 className="text-coffee-700 font-medium mb-2">Languages</h3>
+                <h3 className="text-coffee-700 font-medium mb-2">Web Technologies</h3>
                 <div className="space-y-3">
                   {[
-                    { name: "English", level: "Native" },
-                    { name: "Spanish", level: "Fluent" },
-                    { name: "French", level: "Intermediate" },
-                  ].map((lang) => (
-                    <div key={lang.name} className="flex justify-between">
-                      <span className="text-sm text-earth-700">{lang.name}</span>
-                      <span className="text-sm text-earth-500">{lang.level}</span>
+                    { name: "HTML/CSS", level: 80 },
+                    { name: "JavaScript", level: 70 },
+                    { name: "API Integration", level: 75 },
+                  ].map((skill) => (
+                    <div key={skill.name}>
+                      <div className="flex justify-between mb-1">
+                        <span className="text-sm text-earth-700">{skill.name}</span>
+                        <span className="text-xs text-earth-500">{skill.level}%</span>
+                      </div>
+                      <div className="w-full bg-earth-100 rounded-full h-2">
+                        <div
+                          className="bg-coffee-600 h-2 rounded-full"
+                          style={{ width: `${skill.level}%` }}
+                        ></div>
+                      </div>
                     </div>
                   ))}
                 </div>

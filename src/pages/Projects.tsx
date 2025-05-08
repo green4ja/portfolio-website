@@ -1,50 +1,51 @@
 
 import { useState } from "react";
 import ProjectCard, { ProjectProps } from "@/components/ProjectCard";
+import { Link } from "react-router-dom";
 
-// Sample project data
+// Project data from resume
 const projectsData: ProjectProps[] = [
   {
     id: 1,
-    title: "Portfolio Website",
-    description: "A personal portfolio website built with React and Tailwind CSS.",
+    title: "Smart Bartender Appliance",
+    description: "An automated kitchen appliance that pours beverages based on user-selected recipes.",
     image: "https://images.unsplash.com/photo-1482881497185-d4a9ddbe4151?auto=format&fit=crop&w=800&q=80",
-    tags: ["React", "Tailwind CSS", "TypeScript"],
+    tags: ["Python", "Raspberry Pi", "PyQt6", "Hardware"],
   },
   {
     id: 2,
-    title: "E-commerce Platform",
-    description: "A full-stack e-commerce platform with product management and payment integration.",
-    image: "https://images.unsplash.com/photo-1482881497185-d4a9ddbe4151?auto=format&fit=crop&w=800&q=80",
-    tags: ["Next.js", "Stripe", "MongoDB"],
+    title: "AWS Monitoring Tool",
+    description: "A tool that monitors AWS tables used by teams, sending daily email reports highlighting issues.",
+    image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80",
+    tags: ["AWS", "Python", "Automation"],
   },
   {
     id: 3,
-    title: "Task Management App",
-    description: "A productivity application for managing personal and team tasks.",
-    image: "https://images.unsplash.com/photo-1482881497185-d4a9ddbe4151?auto=format&fit=crop&w=800&q=80",
-    tags: ["React Native", "Firebase", "Redux"],
+    title: "Battery Health Monitoring System",
+    description: "Improved battery health monitoring report leading to $1.5M YTD warranty cost savings.",
+    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80",
+    tags: ["SQL", "AWS", "Qlik Sense", "Data Analytics"],
   },
   {
     id: 4,
-    title: "Health & Wellness Platform",
-    description: "A web application for tracking health metrics and providing wellness recommendations.",
-    image: "https://images.unsplash.com/photo-1482881497185-d4a9ddbe4151?auto=format&fit=crop&w=800&q=80",
-    tags: ["Vue.js", "Node.js", "PostgreSQL"],
+    title: "SERCOS Stepper Motor Integration",
+    description: "Integration of third-party SERCOS Stepper Motor Drive into a Rexroth-based controls system.",
+    image: "https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?auto=format&fit=crop&w=800&q=80",
+    tags: ["Hardware", "Control Systems", "Engineering"],
   },
   {
     id: 5,
-    title: "Real Estate Listings",
-    description: "A platform for browsing and managing real estate listings with advanced filtering.",
-    image: "https://images.unsplash.com/photo-1482881497185-d4a9ddbe4151?auto=format&fit=crop&w=800&q=80",
-    tags: ["React", "Express", "MongoDB"],
+    title: "Robotic Tape Laying System",
+    description: "Implementation of linear, stepper, and servo motors into a robotic tape laying system.",
+    image: "https://images.unsplash.com/photo-1535378917042-10a22c95931a?auto=format&fit=crop&w=800&q=80",
+    tags: ["Robotics", "Control Systems", "Engineering"],
   },
   {
     id: 6,
-    title: "Social Media Dashboard",
-    description: "An analytics dashboard for tracking social media engagement and performance.",
-    image: "https://images.unsplash.com/photo-1482881497185-d4a9ddbe4151?auto=format&fit=crop&w=800&q=80",
-    tags: ["Angular", "Chart.js", "Firebase"],
+    title: "Remote Firmware Update Detection",
+    description: "New method for remotely detecting firmware updates on the controls system of fleet trucks.",
+    image: "https://images.unsplash.com/photo-1504639725590-34d0984388bd?auto=format&fit=crop&w=800&q=80",
+    tags: ["Firmware", "IoT", "Telematics"],
   },
 ];
 
@@ -66,7 +67,7 @@ const Projects = () => {
         <div className="section-container text-center">
           <h1 className="page-title">My Projects</h1>
           <p className="text-lg text-earth-600 max-w-2xl mx-auto">
-            Explore the various projects I've worked on throughout my career. Each project 
+            Explore the various projects I've worked on throughout my education and career. Each project 
             represents a unique challenge and solution.
           </p>
         </div>

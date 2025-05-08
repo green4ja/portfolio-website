@@ -1,4 +1,3 @@
-
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -10,13 +9,13 @@ const Index = () => {
         <div className="section-container">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="font-heading text-4xl md:text-6xl font-bold text-earth-900 mb-6 animate-fade-in">
-              Your Name
+              Jacob Greenebaum
             </h1>
             <p className="text-xl md:text-2xl text-earth-700 mb-8 animate-fade-in" style={{animationDelay: "0.2s"}}>
-              Professional Title | Expertise | Location
+              Computer Engineering Student | Software Development | Cincinnati, OH
             </p>
             <p className="text-lg text-earth-600 mb-10 animate-fade-in" style={{animationDelay: "0.4s"}}>
-              Welcome to my portfolio! I'm passionate about creating meaningful work 
+              Welcome to my portfolio! I'm passionate about creating meaningful software 
               that combines innovation with practical solutions.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4 animate-fade-in" style={{animationDelay: "0.6s"}}>
@@ -53,14 +52,14 @@ const Index = () => {
             <div>
               <h2 className="section-title">About Me</h2>
               <p className="text-earth-600 mb-6">
-                I am a passionate professional with expertise in [Your Field]. With [X] years of experience, 
-                I've developed a strong foundation in [Key Skills] and have successfully delivered 
-                projects for [Types of Clients/Companies].
+                I am a passionate Computer Engineering student at the University of Cincinnati with a strong foundation in software development. 
+                Through my co-op experiences at companies like Fives Cincinnati and Altec Inc., I've developed expertise in control systems, 
+                analytics, and software engineering.
               </p>
               <p className="text-earth-600 mb-8">
                 My approach combines creative thinking with technical expertise to develop 
                 solutions that are both innovative and practical. I believe in continuous learning 
-                and staying updated with the latest trends and technologies in my field.
+                and staying updated with the latest technologies in my field.
               </p>
               <Link
                 to="/resume"
@@ -79,7 +78,31 @@ const Index = () => {
         <div className="section-container">
           <h2 className="section-title text-center mb-12">Featured Projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[1, 2, 3].map((item) => (
+            <div className="bg-white rounded-lg overflow-hidden shadow-md card-hover">
+              <div className="h-48 bg-earth-200 overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1482881497185-d4a9ddbe4151?auto=format&fit=crop&w=800&q=80"
+                  alt="Smart Bartender Appliance"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="font-heading text-xl font-semibold text-earth-800 mb-2">Smart Bartender Appliance</h3>
+                <p className="text-earth-600 mb-4">
+                  An automated kitchen appliance that pours beverages based on user-selected recipes using Raspberry Pi and Python.
+                </p>
+                <Link
+                  to="/projects/1"
+                  className="inline-flex items-center text-coffee-700 font-medium hover:text-coffee-800 transition-colors"
+                >
+                  View details
+                  <ArrowRight size={16} className="ml-2" />
+                </Link>
+              </div>
+            </div>
+            
+            {/* Keep the other featured project cards for visual balance */}
+            {[2, 3].map((item) => (
               <div key={item} className="bg-white rounded-lg overflow-hidden shadow-md card-hover">
                 <div className="h-48 bg-earth-200 overflow-hidden">
                   <img
@@ -89,9 +112,9 @@ const Index = () => {
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="font-heading text-xl font-semibold text-earth-800 mb-2">Project Title {item}</h3>
+                  <h3 className="font-heading text-xl font-semibold text-earth-800 mb-2">AWS Monitoring Tool</h3>
                   <p className="text-earth-600 mb-4">
-                    A brief description of the project, highlighting key features and technologies used.
+                    A tool that monitors AWS tables used by teams, sending daily email reports highlighting issues.
                   </p>
                   <Link
                     to={`/projects`}
@@ -121,14 +144,14 @@ const Index = () => {
           <h2 className="section-title text-center mb-12">Skills & Expertise</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {[
-              "Web Development",
-              "UX Design",
-              "Project Management",
-              "Content Strategy",
-              "Data Analysis",
-              "Digital Marketing",
-              "Mobile Development",
-              "SEO Optimization",
+              "Python",
+              "C++",
+              "SQL",
+              "AWS",
+              "Qlik",
+              "Raspberry Pi",
+              "Control Systems",
+              "Data Analytics",
             ].map((skill) => (
               <div key={skill} className="bg-earth-50 rounded-lg p-6 text-center card-hover">
                 <h3 className="font-medium text-earth-800">{skill}</h3>
@@ -152,8 +175,7 @@ const Index = () => {
         <div className="section-container text-center">
           <h2 className="font-heading text-3xl md:text-4xl font-bold mb-6">Ready to Work Together?</h2>
           <p className="text-coffee-100 max-w-2xl mx-auto mb-8">
-            I'm currently available for freelance projects, full-time positions, and consulting work. 
-            Let's connect and discuss how I can help bring your ideas to life.
+            I'm currently looking for new opportunities and challenges. Let's connect and discuss how I can contribute to your team.
           </p>
           <Link
             to="/contact"
