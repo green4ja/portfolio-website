@@ -43,7 +43,7 @@ const Index = () => {
             <div>
               <div className="aspect-square bg-earth-200 rounded-lg overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1485833077593-4278bba3f11f?auto=format&fit=crop&w=800&q=80"
+                  src="/lovable-uploads/AboutMePhoto.JPG"
                   alt="Profile"
                   className="w-full h-full object-cover"
                 />

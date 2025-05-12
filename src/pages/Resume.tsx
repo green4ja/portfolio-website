@@ -38,10 +38,10 @@ const Resume = () => {
                   <div className="mt-3 text-earth-700">
                     <p className="font-medium">Relevant Coursework:</p>
                     <ul className="list-disc pl-5 mt-1 space-y-1 text-earth-600">
-                      <li>Control Systems</li>
-                      <li>Software Development</li>
+                      <li>Software Engineering</li>
                       <li>Computer Architecture</li>
                       <li>Data Structures and Algorithms</li>
+                      <li>Electronics II</li>
                     </ul>
                   </div>
                 </div>
@@ -54,7 +54,7 @@ const Resume = () => {
               <div className="space-y-6">
                 <div className="bg-white p-6 rounded-lg border border-earth-100 shadow-sm">
                   <h3 className="font-heading text-xl font-semibold text-earth-800">Control Software Engineering Co-op</h3>
-                  <p className="text-coffee-600">Fives Cincinnati • Hebron, KY • Jan. 2025</p>
+                  <p className="text-coffee-600">Fives Cincinnati • Hebron, KY • Jan 2025</p>
                   <div className="mt-3 text-earth-600">
                     <ul className="list-disc pl-5 mt-1 space-y-2">
                       <li>Integrated a third-party SERCOS Stepper Motor Drive into a Rexroth-based controls system, expanding hardware compatibility.</li>
@@ -78,7 +78,7 @@ const Resume = () => {
                 
                 <div className="bg-white p-6 rounded-lg border border-earth-100 shadow-sm">
                   <h3 className="font-heading text-xl font-semibold text-earth-800">Product Engineering (Data) Co-op</h3>
-                  <p className="text-coffee-600">Altec Inc. • Elizabethtown, KY • Aug. 2023</p>
+                  <p className="text-coffee-600">Altec Inc. • Elizabethtown, KY • Aug 2023</p>
                   <div className="mt-3 text-earth-600">
                     <ul className="list-disc pl-5 mt-1 space-y-2">
                       <li>Improved the battery health monitoring report, leading to $1.5 million YTD of warranty cost savings.</li>
@@ -102,23 +102,14 @@ const Resume = () => {
                 <h3 className="text-coffee-700 font-medium mb-2">Programming Languages</h3>
                 <div className="space-y-3">
                   {[
-                    { name: "Python 3", level: 90 },
-                    { name: "C++", level: 85 },
-                    { name: "C# (.NET, WPF)", level: 80 },
-                    { name: "SQL", level: 75 },
-                    { name: "MATLAB", level: 70 },
+                    { name: "Python 3" },
+                    { name: "C++" },
+                    { name: "C# (.NET, WPF)" },
+                    { name: "SQL" },
+                    { name: "MATLAB" },
                   ].map((skill) => (
                     <div key={skill.name}>
-                      <div className="flex justify-between mb-1">
-                        <span className="text-sm text-earth-700">{skill.name}</span>
-                        <span className="text-xs text-earth-500">{skill.level}%</span>
-                      </div>
-                      <div className="w-full bg-earth-100 rounded-full h-2">
-                        <div
-                          className="bg-coffee-600 h-2 rounded-full"
-                          style={{ width: `${skill.level}%` }}
-                        ></div>
-                      </div>
+                      <span className="text-sm text-earth-700">{skill.name}</span>
                     </div>
                   ))}
                 </div>
@@ -129,25 +120,16 @@ const Resume = () => {
                 <h3 className="text-coffee-700 font-medium mb-2">Software & Frameworks</h3>
                 <div className="space-y-3">
                   {[
-                    { name: "Microsoft Office", level: 90 },
-                    { name: "VSCode", level: 85 },
-                    { name: "VS 2022", level: 80 },
-                    { name: "Indraworks", level: 75 },
-                    { name: "Qlik", level: 85 },
-                    { name: "AWS", level: 80 },
-                    { name: "Raspberry Pi", level: 90 },
+                    { name: "Microsoft Office" },
+                    { name: "VSCode" },
+                    { name: "VS 2022" },
+                    { name: "Indraworks" },
+                    { name: "Qlik" },
+                    { name: "AWS" },
+                    { name: "Raspberry Pi" },
                   ].map((skill) => (
                     <div key={skill.name}>
-                      <div className="flex justify-between mb-1">
-                        <span className="text-sm text-earth-700">{skill.name}</span>
-                        <span className="text-xs text-earth-500">{skill.level}%</span>
-                      </div>
-                      <div className="w-full bg-earth-100 rounded-full h-2">
-                        <div
-                          className="bg-coffee-600 h-2 rounded-full"
-                          style={{ width: `${skill.level}%` }}
-                        ></div>
-                      </div>
+                      <span className="text-sm text-earth-700">{skill.name}</span>
                     </div>
                   ))}
                 </div>
@@ -158,21 +140,12 @@ const Resume = () => {
                 <h3 className="text-coffee-700 font-medium mb-2">Web Technologies</h3>
                 <div className="space-y-3">
                   {[
-                    { name: "HTML/CSS", level: 80 },
-                    { name: "JavaScript", level: 70 },
-                    { name: "API Integration", level: 75 },
+                    { name: "HTML/CSS" },
+                    { name: "JavaScript" },
+                    { name: "API Integration" },
                   ].map((skill) => (
                     <div key={skill.name}>
-                      <div className="flex justify-between mb-1">
-                        <span className="text-sm text-earth-700">{skill.name}</span>
-                        <span className="text-xs text-earth-500">{skill.level}%</span>
-                      </div>
-                      <div className="w-full bg-earth-100 rounded-full h-2">
-                        <div
-                          className="bg-coffee-600 h-2 rounded-full"
-                          style={{ width: `${skill.level}%` }}
-                        ></div>
-                      </div>
+                      <span className="text-sm text-earth-700">{skill.name}</span>
                     </div>
                   ))}
                 </div>
