@@ -11,8 +11,8 @@ const Resume = () => {
             My educational background, professional qualifications, and key skills.
           </p>
           <a 
-            href="/lovable-uploads/cae90491-3e68-4db8-9145-7f432359f7f1.png" 
-            download="Jacob_Greenebaum_Resume.pdf"
+            href="/lovable-uploads/Greenebaum_Jacob_Resume_2025.pdf"
+            download="Greenebaum_Jacob_Resume_2025.pdf"
             className="inline-flex items-center mt-6 px-6 py-3 bg-coffee-600 text-white rounded-md font-medium hover:bg-coffee-700 transition-colors"
           >
             <Download size={18} className="mr-2" />

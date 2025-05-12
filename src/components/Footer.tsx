@@ -44,8 +44,8 @@ const Footer = () => {
               <li className="flex items-center gap-2">
                 <FileText size={18} />
                 <a 
-                  href="/lovable-uploads/cae90491-3e68-4db8-9145-7f432359f7f1.png" 
-                  download="Jacob_Greenebaum_Resume.pdf"
+                  href="/lovable-uploads/Greenebaum_Jacob_Resume_2025.pdf"
+                  download="Greenebaum_Jacob_Resume_2025.pdf"
                   className="hover:text-white transition-colors"
                 >
                   Download Resume

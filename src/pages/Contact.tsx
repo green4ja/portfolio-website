@@ -76,7 +76,9 @@ const Contact = () => {
                   GitHub
                 </a>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/in/jacob-greenebaum-8a0951265/"
+                  target="_blank"
+                  rel="noopener noreferrer" 
                   className="flex items-center px-4 py-2 bg-earth-100 text-earth-700 rounded-md hover:bg-coffee-100 hover:text-coffee-700 transition-colors"
                 >
                   <Linkedin size={18} className="mr-2" />
