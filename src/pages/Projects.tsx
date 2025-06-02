@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import ProjectCard, { ProjectProps } from "@/components/ProjectCard";
 import { Link } from "react-router-dom";
@@ -9,7 +8,7 @@ const projectsData: ProjectProps[] = [
     id: 1,
     title: "Smart Bartender Appliance",
     description: "An automated kitchen appliance that pours beverages based on user-selected recipes.",
-    image: "https://images.unsplash.com/photo-1482881497185-d4a9ddbe4151?auto=format&fit=crop&w=800&q=80",
+    image: "/lovable-uploads/cocktail-compiler-enclosure.JPG", // updated image path
     tags: ["Python", "Raspberry Pi", "PyQt6", "Hardware"],
   },
   {

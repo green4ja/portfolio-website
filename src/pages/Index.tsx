@@ -81,7 +81,7 @@ const Index = () => {
             <div className="bg-white rounded-lg overflow-hidden shadow-md card-hover">
               <div className="h-48 bg-earth-200 overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1482881497185-d4a9ddbe4151?auto=format&fit=crop&w=800&q=80"
+                  src="/lovable-uploads/cocktail-compiler-enclosure.JPG" // updated image path
                   alt="Smart Bartender Appliance"
                   className="w-full h-full object-cover"
                 />

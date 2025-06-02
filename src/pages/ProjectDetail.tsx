@@ -1,4 +1,3 @@
-
 import { useParams, Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 
@@ -29,7 +28,7 @@ const projectDetails: ProjectDetailProps[] = [
       "The hardware consists of a 3D-printed housing, Raspberry Pi, 7\" touchscreen display, custom soldered relay board, power supply, voltage regulator, and peristaltic pumps to carry out the functions of the appliance.",
       "The user interface was built with a Python-based GUI using PyQt6, enabling intuitive interaction through the touchscreen display."
     ],
-    image: "https://images.unsplash.com/photo-1482881497185-d4a9ddbe4151?auto=format&fit=crop&w=800&q=80",
+    image: "/lovable-uploads/ingredients_page.png",
     tags: ["Python", "Raspberry Pi", "PyQt6", "Hardware"],
     github: "https://github.com/green4ja/cocktail-compiler",
     technologies: ["Python 3", "PyQt6", "Raspberry Pi", "CocktailDB API", "3D Printing", "Electronics"],
