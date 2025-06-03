@@ -52,7 +52,7 @@ const projectDetails: ProjectDetailProps[] = [
       "The codebase is structured for maintainability and scalability, using best practices in frontend development.",
       "All content and styling have been customized and extended beyond any initial template to reflect my personal brand and technical expertise."
     ],
-    image: "/public/placeholder.svg",
+    image: "/lovable-uploads/portfolio-website-tall.jpg", // Updated to use the new tall image
     tags: ["React", "TypeScript", "Tailwind CSS", "Vite", "Frontend"],
     github: "https://github.com/green4ja/portfolio-website",
     technologies: [
@@ -82,7 +82,7 @@ const projectDetails: ProjectDetailProps[] = [
       "Players can place flags using both the right mouse button and the spacebar, and enjoy a classic minesweeper experience with modern enhancements.",
       "Feel free to use this repository's contents however you see fit."
     ],
-    image: "/public/placeholder.svg", // Use a placeholder for the detail page
+    image: "/lovable-uploads/minesweeper-tall.jpg", // Updated to use the new tall image
     tags: ["Python", "Pygame", "Game", "Desktop"],
     github: "https://github.com/green4ja/minesweeper",
     technologies: [
