@@ -40,15 +40,49 @@ const projectDetails: ProjectDetailProps[] = [
       "Automated beverage dispensing"
     ],
     date: "Nov. 2024"
+  },
+  {
+    id: 2,
+    title: "Portfolio Website",
+    description: "Personal portfolio website built with React, TypeScript, and Tailwind CSS to showcase projects and experience.",
+    fullDescription: [
+      "This portfolio website serves as a central hub for showcasing my projects, experience, and skills as a Computer Engineering student and software developer.",
+      "The site features a modern, responsive design and is built with React, TypeScript, and Tailwind CSS for a fast and accessible user experience.",
+      "It includes dedicated sections for projects, work experience, and a contact form that allows visitors to reach out via email.",
+      "The codebase is structured for maintainability and scalability, using best practices in frontend development.",
+      "All content and styling have been customized and extended beyond any initial template to reflect my personal brand and technical expertise."
+    ],
+    image: "/public/placeholder.svg",
+    tags: ["React", "TypeScript", "Tailwind CSS", "Vite", "Frontend"],
+    github: "https://github.com/green4ja/portfolio-website",
+    technologies: [
+      "React",
+      "TypeScript",
+      "Vite",
+      "Tailwind CSS",
+      "shadcn/ui",
+      "EmailJS"
+    ],
+    features: [
+      "Responsive, modern design",
+      "Project and experience sections",
+      "Contact form with email functionality",
+      "Performance and accessibility focused",
+      "Custom UI components"
+    ],
+    date: "May 2024"
   }
 ];
 
 const ProjectDetail = () => {
   const { id } = useParams();
-  const projectId = parseInt(id || "1");
-  
-  const project = projectDetails.find(p => p.id === projectId);
-  
+
+  // Only allow numeric IDs that exist in projectDetails
+  const allowedIds = projectDetails.map((p) => String(p.id));
+  const isValidId = id && allowedIds.includes(id);
+  const projectId = isValidId ? Number(id) : undefined;
+  const project = projectDetails.find((p) => p.id === projectId);
+
   if (!project) {
     return (
       <div className="min-h-screen">
@@ -80,16 +114,16 @@ const ProjectDetail = () => {
             <ArrowLeft size={16} className="mr-2" />
             Back to Projects
           </Link>
-          
+
           <h1 className="page-title">{project.title}</h1>
           <p className="text-lg text-earth-600 max-w-3xl mt-4">
             {project.description}
           </p>
-          
+
           <div className="flex flex-wrap gap-2 mt-6">
             {project.tags.map((tag, index) => (
-              <span 
-                key={index} 
+              <span
+                key={index}
                 className="text-sm bg-earth-100 text-earth-700 px-3 py-1 rounded-full"
               >
                 {tag}
@@ -98,7 +132,7 @@ const ProjectDetail = () => {
           </div>
         </div>
       </div>
-      
+
       <div className="section-container py-12">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
           <div className="lg:col-span-2">
@@ -110,7 +144,7 @@ const ProjectDetail = () => {
                 className="w-full h-auto object-cover"
               />
             </div>
-            
+
             {/* Project Description */}
             <h2 className="text-2xl font-heading font-semibold text-earth-800 mb-4">About This Project</h2>
             <div className="space-y-4 text-earth-700">
@@ -118,7 +152,7 @@ const ProjectDetail = () => {
                 <p key={idx}>{paragraph}</p>
               ))}
             </div>
-            
+
             {/* Project Features */}
             <h2 className="text-2xl font-heading font-semibold text-earth-800 mt-10 mb-4">Key Features</h2>
             <ul className="list-disc pl-5 space-y-2 text-earth-700">
@@ -127,18 +161,18 @@ const ProjectDetail = () => {
               ))}
             </ul>
           </div>
-          
+
           {/* Sidebar */}
           <div>
             <div className="bg-white p-6 rounded-lg border border-earth-100 shadow-sm sticky top-24">
               <h3 className="font-heading text-xl font-semibold text-earth-800 mb-4">Project Details</h3>
-              
+
               <div className="space-y-4">
                 <div>
                   <h4 className="text-sm uppercase tracking-wider text-earth-500 font-medium">Completion Date</h4>
                   <p className="text-earth-800 mt-1">{project.date}</p>
                 </div>
-                
+
                 <div>
                   <h4 className="text-sm uppercase tracking-wider text-earth-500 font-medium">Technologies Used</h4>
                   <div className="flex flex-wrap gap-2 mt-2">
@@ -149,11 +183,11 @@ const ProjectDetail = () => {
                     ))}
                   </div>
                 </div>
-                
+
                 {project.github && (
                   <div>
                     <h4 className="text-sm uppercase tracking-wider text-earth-500 font-medium">Source Code</h4>
-                    <a 
+                    <a
                       href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -163,11 +197,11 @@ const ProjectDetail = () => {
                     </a>
                   </div>
                 )}
-                
+
                 {project.demo && (
                   <div>
                     <h4 className="text-sm uppercase tracking-wider text-earth-500 font-medium">Live Demo</h4>
-                    <a 
+                    <a
                       href={project.demo}
                       target="_blank"
                       rel="noopener noreferrer"

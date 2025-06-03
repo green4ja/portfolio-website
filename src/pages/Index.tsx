@@ -81,7 +81,7 @@ const Index = () => {
             <div className="bg-white rounded-lg overflow-hidden shadow-md card-hover">
               <div className="h-48 bg-earth-200 overflow-hidden">
                 <img
-                  src="/lovable-uploads/cocktail-compiler-enclosure.JPG" // updated image path
+                  src="/lovable-uploads/cocktail-compiler-enclosure.JPG"
                   alt="Smart Bartender Appliance"
                   className="w-full h-full object-cover"
                 />
@@ -100,9 +100,30 @@ const Index = () => {
                 </Link>
               </div>
             </div>
-            
+            <div className="bg-white rounded-lg overflow-hidden shadow-md card-hover">
+              <div className="h-48 bg-earth-200 overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80"
+                  alt="Portfolio Website"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="font-heading text-xl font-semibold text-earth-800 mb-2">Portfolio Website</h3>
+                <p className="text-earth-600 mb-4">
+                  Personal portfolio website built with React, TypeScript, and Tailwind CSS to showcase projects and experience.
+                </p>
+                <Link
+                  to="/projects/2"
+                  className="inline-flex items-center text-coffee-700 font-medium hover:text-coffee-800 transition-colors"
+                >
+                  View details
+                  <ArrowRight size={16} className="ml-2" />
+                </Link>
+              </div>
+            </div>
             {/* Keep the other featured project cards for visual balance */}
-            {[2, 3].map((item) => (
+            {[3].map((item) => (
               <div key={item} className="bg-white rounded-lg overflow-hidden shadow-md card-hover">
                 <div className="h-48 bg-earth-200 overflow-hidden">
                   <img
@@ -112,17 +133,10 @@ const Index = () => {
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="font-heading text-xl font-semibold text-earth-800 mb-2">AWS Monitoring Tool</h3>
+                  <h3 className="font-heading text-xl font-semibold text-earth-800 mb-2">Project {item}</h3>
                   <p className="text-earth-600 mb-4">
-                    A tool that monitors AWS tables used by teams, sending daily email reports highlighting issues.
+                    {/* Placeholder for additional featured projects */}
                   </p>
-                  <Link
-                    to={`/projects`}
-                    className="inline-flex items-center text-coffee-700 font-medium hover:text-coffee-800 transition-colors"
-                  >
-                    View details
-                    <ArrowRight size={16} className="ml-2" />
-                  </Link>
                 </div>
               </div>
             ))}

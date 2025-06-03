@@ -8,15 +8,15 @@ const projectsData: ProjectProps[] = [
     id: 1,
     title: "Smart Bartender Appliance",
     description: "An automated kitchen appliance that pours beverages based on user-selected recipes.",
-    image: "/lovable-uploads/cocktail-compiler-enclosure.JPG", // updated image path
+    image: "/lovable-uploads/cocktail-compiler-enclosure.JPG",
     tags: ["Python", "Raspberry Pi", "PyQt6", "Hardware"],
   },
   {
     id: 2,
-    title: "AWS Monitoring Tool",
-    description: "A tool that monitors AWS tables used by teams, sending daily email reports highlighting issues.",
-    image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80",
-    tags: ["AWS", "Python", "Automation"],
+    title: "Portfolio Website",
+    description: "Personal portfolio website built with React, TypeScript, and Tailwind CSS to showcase projects and experience.",
+    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80",
+    tags: ["React", "TypeScript", "Tailwind CSS", "Vite", "Frontend"],
   },
   {
     id: 3,
