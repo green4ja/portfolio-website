@@ -2,7 +2,7 @@ import { useState } from "react";
 import ProjectCard, { ProjectProps } from "@/components/ProjectCard";
 import { Link } from "react-router-dom";
 
-// Project data from resume
+// Only include real projects for now
 const projectsData: ProjectProps[] = [
   {
     id: 1,
@@ -15,36 +15,15 @@ const projectsData: ProjectProps[] = [
     id: 2,
     title: "Portfolio Website",
     description: "Personal portfolio website built with React, TypeScript, and Tailwind CSS to showcase projects and experience.",
-    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80",
+    image: "/lovable-uploads/portfolio-website.jpg",
     tags: ["React", "TypeScript", "Tailwind CSS", "Vite", "Frontend"],
   },
   {
     id: 3,
-    title: "Battery Health Monitoring System",
-    description: "Improved battery health monitoring report leading to $1.5M YTD warranty cost savings.",
-    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80",
-    tags: ["SQL", "AWS", "Qlik Sense", "Data Analytics"],
-  },
-  {
-    id: 4,
-    title: "SERCOS Stepper Motor Integration",
-    description: "Integration of third-party SERCOS Stepper Motor Drive into a Rexroth-based controls system.",
-    image: "https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?auto=format&fit=crop&w=800&q=80",
-    tags: ["Hardware", "Control Systems", "Engineering"],
-  },
-  {
-    id: 5,
-    title: "Robotic Tape Laying System",
-    description: "Implementation of linear, stepper, and servo motors into a robotic tape laying system.",
-    image: "https://images.unsplash.com/photo-1535378917042-10a22c95931a?auto=format&fit=crop&w=800&q=80",
-    tags: ["Robotics", "Control Systems", "Engineering"],
-  },
-  {
-    id: 6,
-    title: "Remote Firmware Update Detection",
-    description: "New method for remotely detecting firmware updates on the controls system of fleet trucks.",
-    image: "https://images.unsplash.com/photo-1504639725590-34d0984388bd?auto=format&fit=crop&w=800&q=80",
-    tags: ["Firmware", "IoT", "Telematics"],
+    title: "Minesweeper Game",
+    description: "A Python implementation of Minesweeper with custom tile art, multiple difficulties, and real-time performance using pygame.",
+    image: "/lovable-uploads/minesweeper.png",
+    tags: ["Python", "Pygame", "Game", "Desktop"],
   },
 ];
 

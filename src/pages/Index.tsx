@@ -103,7 +103,7 @@ const Index = () => {
             <div className="bg-white rounded-lg overflow-hidden shadow-md card-hover">
               <div className="h-48 bg-earth-200 overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80"
+                  src="/lovable-uploads/portfolio-website.jpg"
                   alt="Portfolio Website"
                   className="w-full h-full object-cover"
                 />
@@ -122,24 +122,28 @@ const Index = () => {
                 </Link>
               </div>
             </div>
-            {/* Keep the other featured project cards for visual balance */}
-            {[3].map((item) => (
-              <div key={item} className="bg-white rounded-lg overflow-hidden shadow-md card-hover">
-                <div className="h-48 bg-earth-200 overflow-hidden">
-                  <img
-                    src={`https://images.unsplash.com/photo-1482881497185-d4a9ddbe4151?auto=format&fit=crop&w=800&q=80`}
-                    alt={`Project ${item}`}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="p-6">
-                  <h3 className="font-heading text-xl font-semibold text-earth-800 mb-2">Project {item}</h3>
-                  <p className="text-earth-600 mb-4">
-                    {/* Placeholder for additional featured projects */}
-                  </p>
-                </div>
+            <div className="bg-white rounded-lg overflow-hidden shadow-md card-hover">
+              <div className="h-48 bg-earth-200 overflow-hidden">
+                <img
+                  src="/lovable-uploads/minesweeper.png"
+                  alt="Minesweeper Game"
+                  className="w-full h-full object-cover"
+                />
               </div>
-            ))}
+              <div className="p-6">
+                <h3 className="font-heading text-xl font-semibold text-earth-800 mb-2">Minesweeper Game</h3>
+                <p className="text-earth-600 mb-4">
+                  A Python implementation of Minesweeper with custom tile art, multiple difficulties, and real-time performance using pygame.
+                </p>
+                <Link
+                  to="/projects/3"
+                  className="inline-flex items-center text-coffee-700 font-medium hover:text-coffee-800 transition-colors"
+                >
+                  View details
+                  <ArrowRight size={16} className="ml-2" />
+                </Link>
+              </div>
+            </div>
           </div>
           <div className="text-center mt-12">
             <Link

@@ -39,7 +39,7 @@ const projectDetails: ProjectDetailProps[] = [
       "Custom hardware solution with peristaltic pumps",
       "Automated beverage dispensing"
     ],
-    date: "Nov. 2024"
+    date: "Oct 2024"
   },
   {
     id: 2,
@@ -70,7 +70,35 @@ const projectDetails: ProjectDetailProps[] = [
       "Performance and accessibility focused",
       "Custom UI components"
     ],
-    date: "May 2024"
+    date: "Mar 2024"
+  },
+  {
+    id: 3,
+    title: "Minesweeper Game",
+    description: "A Python implementation of Minesweeper with custom tile art, multiple difficulties, and real-time performance using pygame.",
+    fullDescription: [
+      "Welcome to my minesweeper repository! This project was programmed in Python using the pygame library.",
+      "The game features custom tile art inspired by minesweeperonline.com, real-time performance, and multiple preset difficulties (Beginner, Intermediate, Expert) as well as the ability to build custom game boards.",
+      "Players can place flags using both the right mouse button and the spacebar, and enjoy a classic minesweeper experience with modern enhancements.",
+      "Feel free to use this repository's contents however you see fit."
+    ],
+    image: "/public/placeholder.svg", // Use a placeholder for the detail page
+    tags: ["Python", "Pygame", "Game", "Desktop"],
+    github: "https://github.com/green4ja/minesweeper",
+    technologies: [
+      "Python",
+      "pygame",
+      "Custom Art",
+      "Desktop Game"
+    ],
+    features: [
+      "Realtime performance",
+      "Custom tile art inspired by minesweeperonline.com",
+      "Place flags using RMB and Spacebar",
+      "Preset difficulties: Beginner (9x9, 10 mines), Intermediate (16x16, 40 mines), Expert (30x16, 99 mines)",
+      "Custom game board builder"
+    ],
+    date: "Jan 2025"
   }
 ];
 
@@ -169,7 +197,7 @@ const ProjectDetail = () => {
 
               <div className="space-y-4">
                 <div>
-                  <h4 className="text-sm uppercase tracking-wider text-earth-500 font-medium">Completion Date</h4>
+                  <h4 className="text-sm uppercase tracking-wider text-earth-500 font-medium">Start Date</h4>
                   <p className="text-earth-800 mt-1">{project.date}</p>
                 </div>
 
